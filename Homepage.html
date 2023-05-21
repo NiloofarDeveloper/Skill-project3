@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="style.css">
+
+    <!--copy and past the snipped 3 from hosted library for using jQuery in my codes-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+    <title>Home Page</title>
+</head>
+<body class="body">
+<header id="mainheader">
+    <nav>
+        <ul>
+            <li><img id ="hamburger" src="images/hamburger.png" alt="navigation" height="50px"></li><!-- I gave an id to hamburger for using it in jquery and by click on the image you can toggle the menu-->
+            <li >Halifax Canoe and Kayak</li>
+            <li><img src="images/paddle-white.png" alt="logo" height="80px"></li>
+        </ul>  
+    </nav>  
+</header>
+    
+    <div class="titleContent">
+        <p>Come Expirence <br>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp;Canada</p>
+        
+    </div>
+    <div class="mainContent">
+        <h1>Upcoming Adventures</h1><hr id="upcomingAdvanture">
+        <h2 id="cityTitle">Halifax</h2><hr  id="hR">
+        <p id="date">Date: 2017-04-12<br>Duration: 4 days</p>
+        <p style="margin-bottom: 0; font-size: larger;">Summary</p>
+        <p style="margin-top: 0;">Lorem ipsum dolor sit amet consectetur 
+            adipisicing elit. Dolore, exercitationem 
+            quam eos dignissimos quia perferendis 
+            suscipit repellat quaerat unde cum maxime? 
+            Incidunt facilis praesentium eos itaque 
+            dolore quos. Maxime, enim?</p>
+        <h2 id="cityTitle">Sydney</h2><hr id="hR">
+        <p id="date">Date: 2017-05-10<br>Duration: 2 days</p>
+        <p style="margin-bottom: 0; font-size: larger;">Summary</p>
+        <p style="margin-top: 0;">Lorem ipsum dolor sit amet consectetur 
+                adipisicing elit. Dolore, exercitationem 
+                quam eos dignissimos quia perferendis 
+                suscipit repellat quaerat unde cum maxime? 
+                Incidunt facilis praesentium eos itaque 
+                dolore quos. Maxime, enim?</p>
+        <h2 id="cityTitle">Lunenburg</h2><hr id="hR">
+        <p id="date">Date: 2017-04-10<br>Duration: 3 days</p>
+        <p style="margin-bottom: 0; font-size: larger;">Summary</p>
+        <p style="margin-top: 0;">Lorem ipsum dolor sit amet consectetur 
+                        adipisicing elit. Dolore, exercitationem 
+                        quam eos dignissimos quia perferendis 
+                        suscipit repellat quaerat unde cum maxime? 
+                        Incidunt facilis praesentium eos itaque 
+                        dolore quos. Maxime, enim?</p>        
+        
+
+    </div>
+    <!--this is jQury section, by clicking on hamburger, the menu is toggled in and out-->
+    <script>
+        $(document).ready(function(){
+            $("#hamburger").click(function(){
+                $("#pannel").toggle();
+            })
+        })
+    </script>
+    <!--the menu inside the pannel-->
+    <div id="pannel">
+        <ul>
+            <li><a href="Homepage.html" style=" text-decoration: none;
+                color: #fff;">HOME</a></li>
+            <li><a href="admin-add.php" style=" text-decoration: none;
+                color: #fff;">BOOK TRIP</a></li>
+            <li><a>ADMIN LOGIN</a></li>
+        </ul>
+    </div>
+</body>
+</html>

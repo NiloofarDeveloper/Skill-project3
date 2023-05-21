@@ -1,0 +1,39 @@
+<?php  switch ($_SESSION["role"]){ ?>
+<?php case "Admin": ?>    
+    <p id="role">Hello Admin</p> <hr>
+    <p id="options">Here are you options:</p>
+    <a id="newAccount" href="new-account.php">Create New Account</a> <br>
+    <a id="isntWorking" href="isnt-working.php">My computer isn't working</a>
+    
+<?php break; ?>    
+
+
+<?php  case "Manager":  ?>
+    <p id="role">Hello Manager</p> <hr>
+    <p id="options">Here are you options:</p>
+    <a id="request" href="lost-password.php">I Lost My Password</a> <br>
+    <a id="isntWorking" href="isnt-working.php">My computer isn't working</a>
+    
+<?php break; ?>    
+
+<?php case "CEO":  ?>
+
+    <p id="role">Hello CEO</p> <hr>
+    <p id="options">Here are you options:</p>
+    <a id="request" href="need-help.php">Need Help</a> <br>
+    <a id="isntWorking" href="isnt-working.php">My computer isn't working</a>
+
+<?php break; ?> 
+<?php default: ?>
+    <p>your done</p>
+<?php } ?> 
+
+$location= $row["heading"];
+            $time= $row["tripDate"];
+            $period= $row["duration"];
+            $explain= $row["Summary"];
+
+
+database name= adventure, new one= 	id20598014_adventure
+database username   = Niloofar , new one= id20598014_niloofar        
+passport= EM7J|(pq*ZSigC|&
